@@ -424,7 +424,7 @@ X>     ```haskell
 X>     data OneMore f a = OneMore a (f a)
 X>     ```
 X>         
-X>     The container `OneMore f` is also has an ordering, where the new element comes before any element of `f`. Write a `Foldable` instance for `OneMore f`:
+X>     The container `OneMore f` also has an ordering, where the new element comes before any element of `f`. Write a `Foldable` instance for `OneMore f`:
 X>   
 X>     ```haskell
 X>     instance foldableOneMore :: Foldable f => Foldable (OneMore f) where
